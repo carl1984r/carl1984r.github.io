@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: carl.cc@gmail.com
 copyright_name: Bry Cox
 description: > # this means to ignore newlines until "baseurl:"
-  Flatiron School 
+  Bry Cox | Flatiron School 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  carl1984r
