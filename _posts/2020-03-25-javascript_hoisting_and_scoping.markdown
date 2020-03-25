@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JavaScript:  Hoisting and Scoping"
-date:       2020-03-25 08:04:22 +0000
+date:       2020-03-25 04:04:23 -0400
 permalink:  javascript_hoisting_and_scoping
 ---
 
@@ -33,4 +33,4 @@ console.log(g);  // example text
 
 ```
 
-Hoisting refers to how execution contexts work (creation and execution).  First, function and variable declarations are placed into memory (creation phase) - variable declarations will have default value of “undefined”.  During the execution phase, code execution proceeds line by line - real values are then assigned to variables already present in memory.  Since functions are loaded into memory during the creation phase, it will be available for use prior to function declaration (during execution - regardless of placement in code).  
+Hoisting refers to how execution contexts work (creation and execution).  First, function and variable declarations are placed into memory (creation phase) - variable declarations will have default value of “undefined”.  During the execution phase, code execution proceeds line by line - real values are then assigned to variables already present in memory.  Since functions are loaded into memory during the creation phase, it will be available for use prior to function declaration (during execution - regardless of location in code).  
