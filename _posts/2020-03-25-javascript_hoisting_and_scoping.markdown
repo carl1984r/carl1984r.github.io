@@ -34,3 +34,63 @@ console.log(g);  // example text
 ```
 
 Hoisting refers to how execution contexts work (creation and execution).  First, function and variable declarations are placed into memory (creation phase) - variable declarations will have default value of “undefined”.  During the execution phase, code execution proceeds line by line - real values are then assigned to variables already present in memory.  Since functions are loaded into memory during the creation phase, it will be available for use prior to function declaration (during execution - regardless of location in code).  
+
+Example:
+```
+function addFirstName(name) {
+  console.log("Your first name is " + name);
+}
+
+addFirstname("Steve");
+
+/*
+Output of the code is: "Your first name is Steve"
+*/
+
+```
+
+The above works the same as:  
+
+```
+addFirstname("Steve");
+
+function addFirstName(name) {
+  console.log("Your first name is " + name);
+}
+
+/*
+Output of the code is also: "Your first name is Steve"
+*/
+
+```
+
+Declarations are hoisted.  Not initializations. If a variable (var) is declared and initialized after use, output will be undefined.
+
+Example:  
+```
+console.log(name); // Output: undefined 
+var name; // declaration
+name = "Mike"; // initialization
+
+```
+
+While the var declarations are initialized with undefined, let and const declarations remain uninitialized until evaluation. Output results are relative to placement of let or const within code.
+
+Example:
+```
+console.log(name); // Output: ReferenceError
+let name; 
+name = "David";
+
+```
+
+VS
+
+```
+let name; 
+console.log(name); // Output: undefined
+name = "David";
+
+```
+
+
